@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="BillTime.Controls.WorkControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BillTime.Controls"
+             mc:Ignorable="d" FontSize="18" Background="White" FontFamily="Trebuchet MS"
+             d:DesignHeight="525" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Row 0-->
+        <TextBlock FontSize="24" Grid.Row="0" Margin="0 0 0 15">Client Work</TextBlock>
+
+        <!--Row 1-->
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="5 5 5 10">
+            <TextBlock>Client</TextBlock>
+            <ComboBox x:Name="clientDropDown"/>
+        </StackPanel>
+
+        <!--Row 2-->
+            <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 5 5 15" >
+                <TextBlock>Date</TextBlock>
+                <ComboBox x:Name="datetDropDown" />
+            </StackPanel>
+
+            <!--Row 3-->
+        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 5 5 15">
+            <TextBlock>Hours</TextBlock>
+            <TextBox x:Name="hoursTextBox" />
+        </StackPanel>
+
+        <!--Row 4-->
+        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 10">
+            <TextBlock>Title</TextBlock>
+            <TextBox x:Name="titleTextBox" />
+        </StackPanel>
+        <!--Row 5-->
+        <StackPanel Orientation="Vertical" Grid.Row="5" Margin="5 5 5 10">
+            <TextBlock>Description</TextBlock>
+            <TextBox x:Name="descriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
+        </StackPanel>
+
+        <!--Row 6-->
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="5 5 5 10">
+            <CheckBox x:Name="paidCheckBox" Margin="0 0 10 0" VerticalAlignment="Bottom">
+                Paid
+            </CheckBox>
+            <StackPanel Orientation="Vertical" >
+                <TextBlock>Payment</TextBlock>
+                <ComboBox x:Name="paymenttDropDown" Width="200" />
+            </StackPanel>
+        </StackPanel>
+
+        <!--Row 7-->
+        <Button x:Name="submitForm" Grid.Row="7" Margin="5 5 5 10">Submit</Button>
+    </Grid>
+</UserControl>
