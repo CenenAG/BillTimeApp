@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BillTime.Controls"
              mc:Ignorable="d" FontSize="18" Background="White" FontFamily="Trebuchet MS"
-             d:DesignHeight="500" d:DesignWidth="300">
+             d:DesignHeight="548" d:DesignWidth="310">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

@@ -8,7 +8,7 @@
              FontSize="18"
              Background="White"
              FontFamily="Trebuchet MS"
-             d:DesignHeight="555"
+             d:DesignHeight="525"
              d:DesignWidth="300"
              Margin="0 10 0 10">
     <Grid>

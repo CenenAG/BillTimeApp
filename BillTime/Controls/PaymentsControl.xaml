@@ -39,17 +39,22 @@
         <!--Row 2-->
         <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 5 5 15">
             <TextBlock>Amount</TextBlock>
-            <TextBox x:Name="amountTextBox" />
+            <TextBox x:Name="amountTextBox"
+                     Height="26.9" />
         </StackPanel>
         
         <!--Row 4-->
         <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 15">
             <TextBlock>Hours</TextBlock>
-            <TextBox x:Name="hoursTextBox" />
+            <TextBox x:Name="hoursTextBox"
+                     Height="26.9" />
         </StackPanel>
 
         <!--Row 5-->
-        <Button x:Name="submitForm" Grid.Row="5" Margin="5 5 5 10">Submit</Button>
+        <Button x:Name="submitForm"
+                Grid.Row="5"
+                Margin="5 5 5 10"
+                Padding="0 20">Submit</Button>
 
     </Grid>
 </UserControl>
