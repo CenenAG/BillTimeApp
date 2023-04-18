@@ -47,23 +47,23 @@ namespace BillTime.Controls
         private (bool isValid, DefaultsModel model) ValidateForm()
         {
             bool isValid = true;
-            DefaultsModel model = new DefaultsModel();
+            DefaultsModel defaultModel = new DefaultsModel();
             try
             {
-                model.HasCutOff = (bool)hasCutOffCheckBox.IsChecked ? 1 : 0;
-                model.PreBill = (bool)preBillCheckBox.IsChecked ? 1 : 0;
-                model.HourlyRate = double.Parse(hourlyRateTextBox.Text);
-                model.CutOff = int.Parse(cutOffTextBox.Text);
-                model.MinimumHours = double.Parse(minimumHoursTextBox.Text);
-                model.BillingIncrement = double.Parse(billingIncrementTextBox.Text);
-                model.RoundUpAfterXMinutes = int.Parse(roundUpAfterXMinutesTextBox.Text);
+                defaultModel.HasCutOff = (bool)hasCutOffCheckBox.IsChecked ? 1 : 0;
+                defaultModel.PreBill = (bool)preBillCheckBox.IsChecked ? 1 : 0;
+                defaultModel.HourlyRate = double.Parse(hourlyRateTextBox.Text);
+                defaultModel.CutOff = int.Parse(cutOffTextBox.Text);
+                defaultModel.MinimumHours = double.Parse(minimumHoursTextBox.Text);
+                defaultModel.BillingIncrement = double.Parse(billingIncrementTextBox.Text);
+                defaultModel.RoundUpAfterXMinutes = int.Parse(roundUpAfterXMinutesTextBox.Text);
             }
             catch (System.Exception)
             {
                 isValid = false;
             }
 
-            return (isValid, model);
+            return (isValid, defaultModel);
         }
 
         private void SaveToDb(DefaultsModel model)

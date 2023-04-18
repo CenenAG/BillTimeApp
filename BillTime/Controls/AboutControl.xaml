@@ -6,11 +6,11 @@
              xmlns:local="clr-namespace:BillTime.Controls"
              mc:Ignorable="d"
              FontSize="18"
-             Background="White"
              FontFamily="Trebuchet MS"
              d:DesignHeight="525"
              d:DesignWidth="300"
-             Margin="0 10 0 10">
+             Margin="0 10 0 10"
+             Background="White">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -29,7 +29,7 @@
                    Foreground="Black">About</TextBlock>
 
         <!--Row 1-->
-        <TextBlock FontSize="42"
+        <TextBlock FontSize="34"
                    Grid.Row="1"
                    HorizontalAlignment="Center"
                    Margin="0 20 0 10"
@@ -44,7 +44,7 @@
                    Foreground="#FFef6423">By Zen Walker</TextBlock>
 
         <!--Row 3-->
-        <TextBlock FontSize="24"
+        <TextBlock FontSize="20"
                    Grid.Row="3"
                    HorizontalAlignment="Center"
                    Margin="10 0 10 20"
@@ -55,13 +55,13 @@
         <StackPanel Orientation="Vertical"
                     Grid.Row="4"
                     Margin="0 20 0 20">
-            <TextBlock FontSize="22"
+            <TextBlock FontSize="20"
                        HorizontalAlignment="Center"
                        Foreground="#FFef6423"
                        TextWrapping="Wrap">For more information:</TextBlock>
             <TextBlock HorizontalAlignment="Center"
-                       Margin="0 20 0 20">
-                <Hyperlink NavigateUri="http://IamTimCorey.com">
+                       Margin="0 0 0 20">
+                <Hyperlink NavigateUri="http://IamTimCorey.com" RequestNavigate="Hyperlink_RequestNavigate">
                     http://IamTimCorey.com
                 </Hyperlink>
             </TextBlock>

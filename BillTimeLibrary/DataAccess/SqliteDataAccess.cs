@@ -9,6 +9,7 @@ namespace BillTimeLibrary.DataAccess
 {
     public static class SqliteDataAccess
     {
+        //LoadData<PersonModel>("select * from person", null) = List<Personmodel>
         public static List<T> LoadData<T>(string sqlStatement, Dictionary<string, object> parameters, string connectionName = "Default")
         {
             DynamicParameters dynParameDapperQuery = parameters.ToDynamicParameters();

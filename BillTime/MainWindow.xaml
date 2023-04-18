@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BillTime"
         mc:Ignorable="d"
-        Title="   Bill Time App by Zen Walker" Height="600" Width="350" FontFamily="Trebuchet MS">
+        Title="   Bill Time App by Zen Walker" Height="600" Width="350" FontFamily="Trebuchet MS"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
