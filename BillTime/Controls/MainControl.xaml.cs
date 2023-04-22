@@ -81,7 +81,7 @@ namespace BillTime.Controls
             {
                 model.ClientId = (int)clientDropDown.SelectedValue;
                 model.Hours = double.Parse(hoursTextBox.Text);
-                model.Title = hoursTextBox.Text;
+                model.Title = titleTextBox.Text;
                 model.Description = descriptionTextBox.Text;
             }
             catch (System.Exception)

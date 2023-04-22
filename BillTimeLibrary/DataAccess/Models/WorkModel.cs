@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BillTimeLibrary.DataAccess.Models
+﻿namespace BillTimeLibrary.DataAccess.Models
 {
     public class WorkModel
     {
@@ -13,8 +7,15 @@ namespace BillTimeLibrary.DataAccess.Models
         public double Hours { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string DateEntered { get; set; }
+        public string Date { get; set; }
         public int Paid { get; set; }
         public int? PaymentId { get; set; }
+        public string DisplayValue
+        {
+            get
+            {
+                return $"{Date} - {Title}";
+            }
+        }
     }
 }

@@ -24,44 +24,57 @@
         <!--Row 1-->
         <StackPanel Orientation="Vertical" Grid.Row="1" Margin="5 5 5 10">
             <TextBlock>Client</TextBlock>
-            <ComboBox x:Name="clientDropDown"/>
+            <ComboBox x:Name="clientDropDown" SelectionChanged="clientDropDown_SelectionChanged"/>
         </StackPanel>
 
         <!--Row 2-->
-            <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 5 5 15" >
+            <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 5 5 15" x:Name="dateStackPanel" >
                 <TextBlock>Date</TextBlock>
-                <ComboBox x:Name="datetDropDown" />
+                <ComboBox x:Name="datetDropDown"  SelectionChanged="datetDropDown_SelectionChanged"/>
             </StackPanel>
 
             <!--Row 3-->
-        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 5 5 15">
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="3"
+                    Margin="5 5 5 15"
+                    x:Name="hoursStackPanel">
             <TextBlock>Hours</TextBlock>
             <TextBox x:Name="hoursTextBox" />
         </StackPanel>
 
         <!--Row 4-->
-        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 10">
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="4"
+                    Margin="5 5 5 10"
+                    x:Name="titleStackPanel">
             <TextBlock>Title</TextBlock>
             <TextBox x:Name="titleTextBox" />
         </StackPanel>
         <!--Row 5-->
-        <StackPanel Orientation="Vertical" Grid.Row="5" Margin="5 5 5 10">
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="5"
+                    Margin="5 5 5 10"
+                    x:Name="descriptionStackPanel">
             <TextBlock>Description</TextBlock>
             <TextBox x:Name="descriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
         </StackPanel>
 
         <!--Row 6-->
-        <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="5 5 5 10">
-            <CheckBox x:Name="paidCheckBox" Margin="0 0 10 0" VerticalAlignment="Bottom">
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="6"
+                    Margin="5 5 5 10"
+                    x:Name="paidStackPanel">
+            <CheckBox x:Name="paidCheckBox" Margin="0 0 10 0" VerticalAlignment="Bottom" Click="paidCheckBox_Click">
                 Paid
             </CheckBox>
-            <StackPanel Orientation="Vertical" >
+            <StackPanel Orientation="Vertical"
+                        x:Name="paymentStackPanel">
                 <TextBlock>Payment</TextBlock>
-                <ComboBox x:Name="paymenttDropDown" Width="200" />
+                <ComboBox x:Name="paymentDropDown" Width="200" />
             </StackPanel>
         </StackPanel>
 
         <!--Row 7-->
-        <Button x:Name="submitForm" Grid.Row="7" Margin="5 5 5 10">Submit</Button>
+        <Button x:Name="submitForm" Grid.Row="7" Margin="5 5 5 10" Click="submitForm_Click">Submit</Button>
     </Grid>
 </UserControl>
