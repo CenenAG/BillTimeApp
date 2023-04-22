@@ -56,5 +56,10 @@ namespace BillTime
         {
             content.Content = new AboutControl();
         }
+
+        private void exitMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -15,7 +15,7 @@
         <Menu IsMainMenu="True" Grid.Row="0" FontSize="18" Margin="0 0 0 10" Grid.ColumnSpan="2">
             <MenuItem Header="_File">
                 <MenuItem x:Name="mainMenuItem" Header="_Main" Click="mainMenuItem_Click"/>
-                <MenuItem x:Name="exitMenuItem" Header="E_xit"/>
+                <MenuItem x:Name="exitMenuItem" Header="E_xit" Click="exitMenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="_Editors">
                 <MenuItem x:Name="clientMenuitem" Header="_Client" Click="clientMenuitem_Click" />

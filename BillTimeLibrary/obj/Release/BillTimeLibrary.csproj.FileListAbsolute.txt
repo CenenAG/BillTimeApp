@@ -1,0 +1,12 @@
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\BillTimeLibrary.dll.config
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\BillTimeLibrary.dll
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\BillTimeLibrary.pdb
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\Dapper.dll
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\System.Data.SQLite.dll
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\Dapper.xml
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\bin\Release\System.Data.SQLite.xml
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\obj\Release\BillTimeLibrary.csproj.AssemblyReference.cache
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\obj\Release\BillTimeLibrary.csproj.CoreCompileInputs.cache
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\obj\Release\BillTimeLibrary.csproj.CopyComplete
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\obj\Release\BillTimeLibrary.dll
+C:\repos\CourseHunter\SQLite From Start to Finish\BillTimeApp\BillTimeLibrary\obj\Release\BillTimeLibrary.pdb

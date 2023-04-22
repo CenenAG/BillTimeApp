@@ -41,7 +41,7 @@ namespace BillTime.Controls
             clientDropDown.SelectedValuePath = "Id";
 
             datetDropDown.ItemsSource = payments;
-            datetDropDown.DisplayMemberPath = "Date"; //DisplayValue
+            datetDropDown.DisplayMemberPath = "DisplayValue"; //DisplayValue
             datetDropDown.SelectedValuePath = "Id";
 
         }
