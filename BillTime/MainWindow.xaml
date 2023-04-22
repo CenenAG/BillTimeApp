@@ -14,17 +14,17 @@
         </Grid.RowDefinitions>
         <Menu IsMainMenu="True" Grid.Row="0" FontSize="18" Margin="0 0 0 10" Grid.ColumnSpan="2">
             <MenuItem Header="_File">
-                <MenuItem x:Name="mainMenuItem" Header="_Main"/>
+                <MenuItem x:Name="mainMenuItem" Header="_Main" Click="mainMenuItem_Click"/>
                 <MenuItem x:Name="exitMenuItem" Header="E_xit"/>
             </MenuItem>
             <MenuItem Header="_Editors">
-                <MenuItem x:Name="clientMenuitem" Header="_Client" />
-                <MenuItem x:Name="paymentMenuitem" Header="_Payment" />
-                <MenuItem x:Name="workMenuitem" Header="_Work" />
-                <MenuItem x:Name="defaultsMenuitem" Header="_Defaults" />
+                <MenuItem x:Name="clientMenuitem" Header="_Client" Click="clientMenuitem_Click" />
+                <MenuItem x:Name="paymentMenuitem" Header="_Payment" Click="paymentMenuitem_Click" />
+                <MenuItem x:Name="workMenuitem" Header="_Work" Click="workMenuitem_Click" />
+                <MenuItem x:Name="defaultsMenuitem" Header="_Defaults" Click="defaultsMenuitem_Click"/>
             </MenuItem>
             <MenuItem Header="_Help">
-                <MenuItem x:Name="aboutMenuItem" Header="_About"/>
+                <MenuItem x:Name="aboutMenuItem" Header="_About" Click="aboutMenuItem_Click"/>
             </MenuItem>
         </Menu>
 

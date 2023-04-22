@@ -24,7 +24,37 @@ namespace BillTime
         public MainWindow()
         {
             InitializeComponent();
+            content.Content = new MainControl();
+        }
+
+        private void clientMenuitem_Click(object sender, RoutedEventArgs e)
+        {
             content.Content = new ClientControl();
+        }
+
+        private void paymentMenuitem_Click(object sender, RoutedEventArgs e)
+        {
+            content.Content = new PaymentsControl();
+        }
+
+        private void workMenuitem_Click(object sender, RoutedEventArgs e)
+        {
+            content.Content = new WorkControl();
+        }
+
+        private void defaultsMenuitem_Click(object sender, RoutedEventArgs e)
+        {
+            content.Content = new DefaultsControl();
+        }
+
+        private void mainMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            content.Content = new MainControl();
+        }
+
+        private void aboutMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            content.Content = new AboutControl();
         }
     }
 }

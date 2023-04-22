@@ -55,6 +55,8 @@
     <Compile Include="DataAccess\DataAccessHelpers.cs" />
     <Compile Include="DataAccess\Models\ClientModel.cs" />
     <Compile Include="DataAccess\Models\DefaultsModel.cs" />
+    <Compile Include="DataAccess\Models\PaymentModel.cs" />
+    <Compile Include="DataAccess\Models\WorkModel.cs" />
     <Compile Include="DataAccess\SqliteDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -63,7 +63,7 @@ namespace BillTime.Controls
                 cutOffTextBox.Text = defaultsModel.CutOff.ToString();
                 minimumHoursTextBox.Text = defaultsModel.MinimumHours.ToString();
                 billingIncrementTextBox.Text = defaultsModel.BillingIncrement.ToString();
-                roundUpAfterXMinutesTextBox.Text = defaultsModel.RoundUpAfterXMinutes.ToString();
+                RoundUpAfterXMinutesTextBox.Text = defaultsModel.RoundUpAfterXMinutes.ToString();
             }
             else
             {
@@ -81,7 +81,7 @@ namespace BillTime.Controls
             cutOffTextBox.Text = "0";
             minimumHoursTextBox.Text = "0.25";
             billingIncrementTextBox.Text = "0.25";
-            roundUpAfterXMinutesTextBox.Text = "0";
+            RoundUpAfterXMinutesTextBox.Text = "0";
         }
 
         private void submitForm_Click(object sender, RoutedEventArgs e)
@@ -190,7 +190,7 @@ namespace BillTime.Controls
                 model.CutOff = int.Parse(cutOffTextBox.Text);
                 model.MinimumHours = double.Parse(minimumHoursTextBox.Text);
                 model.BillingIncrement = double.Parse(billingIncrementTextBox.Text);
-                model.RoundUpAfterXMinutes = int.Parse(roundUpAfterXMinutesTextBox.Text);
+                model.RoundUpAfterXMinutes = int.Parse(RoundUpAfterXMinutesTextBox.Text);
             }
             catch (System.Exception)
             {
@@ -240,7 +240,7 @@ namespace BillTime.Controls
             cutOffTextBox.Text = client.CutOff.ToString();
             minimumHoursTextBox.Text = client.MinimumHours.ToString();
             billingIncrementTextBox.Text = client.BillingIncrement.ToString();
-            roundUpAfterXMinutesTextBox.Text = client.RoundUpAfterXMinutes.ToString();
+            RoundUpAfterXMinutesTextBox.Text = client.RoundUpAfterXMinutes.ToString();
         }
 
         private void cancelForm_Click(object sender, RoutedEventArgs e)

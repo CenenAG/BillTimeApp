@@ -26,25 +26,31 @@
             <ComboBox x:Name="clientDropDown"/>
         </StackPanel>
         <!--Row 2-->
-        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="5 5 5 10">
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="2"
+                    Margin="5 5 5 10"
+                    x:Name="hoursStackPanel">
             <StackPanel Orientation="Vertical" Margin="0 0 20 0">
                 <TextBlock>Hours</TextBlock>
                 <TextBox x:Name="hoursTextBox" MinWidth="100"/>
             </StackPanel>
-            <Button x:Name="operateTime" Padding="15 0" >Start Timer</Button>
+            <Button x:Name="operateTime" Padding="15 0" Background="Green" Foreground="White" Click="operateTime_Click">Start Timer</Button>
         </StackPanel>
         <!--Row 3-->
-        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 5 5 10">
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="3"
+                    Margin="5 5 5 10"
+                    x:Name="titleStackPanel">
             <TextBlock>Title</TextBlock>
             <TextBox x:Name="titleTextBox" />
         </StackPanel>
         <!--Row 4-->
-        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 10">
+        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 10" x:Name="descriptionStackPanel">
             <TextBlock>Description</TextBlock>
             <TextBox x:Name="descriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
         </StackPanel>
 
         <!--Row 5-->
-        <Button x:Name="submitForm" Grid.Row="5" Margin="5 20 5 5" Padding="0 20">Submit</Button>
+        <Button x:Name="submitForm" Grid.Row="5" Margin="5 20 5 5" Padding="0 20" Click="submitForm_Click">Submit</Button>
     </Grid>
 </UserControl>
